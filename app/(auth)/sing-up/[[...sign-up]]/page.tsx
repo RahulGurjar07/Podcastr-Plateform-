@@ -1,13 +1,11 @@
-import { SignUp } from "@clerk/nextjs";
-import React from "react";
+import { SignUp } from '@clerk/nextjs'
 
-const page = () => {
-    return (
-        <div className="flex-center glassmorphism-auth h-screen w-full">
-            <SignUp />
-        </div>
-    )
-
+const Page = () => {
+  return (
+    <div className="flex-center glassmorphism-auth h-screen w-full">
+      <SignUp />
+    </div>
+  )
 }
 
-export default page;
+export default Page

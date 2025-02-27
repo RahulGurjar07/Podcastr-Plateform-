@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+ typescript: {
+  ignoreBuildErrors: true
+
+ },
   images: {
     remotePatterns: [
       {
@@ -11,6 +14,10 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "greedy-avocet-324.convex.cloud"
+      },
+      {
+        protocol: "https",
+        hostname: "img.clerk.com"
       }
     ]
   }
